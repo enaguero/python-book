@@ -69,6 +69,18 @@ markdown_extensions:
       permalink: true
 
 plugins:
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Espanol
+          build: true
   - search
   - git-revision-date-localized:
       # Disabled by default to avoid noisy warnings in repos without git history.

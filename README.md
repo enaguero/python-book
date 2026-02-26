@@ -44,6 +44,13 @@ mkdocs serve
 
 Then open: <http://127.0.0.1:8000>
 
+## Language support
+
+- English: <http://127.0.0.1:8000/>
+- Espanol: <http://127.0.0.1:8000/es/>
+
+The project uses `mkdocs-static-i18n` with translated content files (`*.es.md`).
+
 ## Project structure
 
 - `docs/part-1-python-fundamentals/`
