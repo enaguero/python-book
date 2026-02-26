@@ -1,0 +1,91 @@
+site_name: Python Book
+site_description: A practical, chapter-based Python handbook.
+site_url: !ENV [SITE_URL, https://example.com]
+repo_url: !ENV [REPO_URL, https://github.com/your-org/python-book]
+repo_name: !ENV [REPO_NAME, your-org/python-book]
+
+nav:
+  - Home: index.md
+  - Curriculum Tracker: curriculum.md
+  - "Part 1: Python Fundamentals":
+      - Foundations Roadmap (3-4 Months): part-1-python-fundamentals/foundations-roadmap.md
+      - Getting Started: part-1-python-fundamentals/getting-started.md
+      - Variables and Types: part-1-python-fundamentals/variables-and-types.md
+      - Control Flow: part-1-python-fundamentals/control-flow.md
+      - Functions: part-1-python-fundamentals/functions.md
+  - "Part 2: Standard Library Essentials":
+      - Collections and itertools: part-2-standard-library-essentials/collections-and-itertools.md
+      - Pathlib and Files: part-2-standard-library-essentials/pathlib-and-files.md
+      - datetime and JSON: part-2-standard-library-essentials/datetime-and-json.md
+  - "Part 3: Real World Python":
+      - Testing with pytest: part-3-real-world-python/testing-with-pytest.md
+      - Packaging and Virtual Envs: part-3-real-world-python/packaging-and-virtualenvs.md
+      - Typing and Code Quality: part-3-real-world-python/typing-and-quality.md
+      - Asyncio Basics: part-3-real-world-python/asyncio-basics.md
+  - Exercises:
+      - Part 1 Exercises: exercises/part-1/index.md
+      - Part 2 Exercises: exercises/part-2/index.md
+      - Part 3 Exercises: exercises/part-3/index.md
+  - Authoring:
+      - Chapter Template: authoring/chapter-template.md
+      - Interactivity Roadmap: roadmap/interactivity-roadmap.md
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.path
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      # Disabled by default to avoid noisy warnings in repos without git history.
+      enabled: false
+      type: datetime
+      fallback_to_build_date: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: !ENV [REPO_URL, https://github.com/your-org/python-book]
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js
+  - assets/js/pyodide-runner.js
+
+extra_css:
+  - assets/css/pyodide-runner.css
+
+copyright: Copyright &copy; 2026 Python Book

@@ -1,0 +1,57 @@
+.pyodide-runner {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  background: var(--md-default-bg-color);
+}
+
+.pyodide-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.pyodide-status {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.pyodide-status.error {
+  color: var(--md-typeset-a-color);
+}
+
+.pyodide-editor {
+  width: 100%;
+  min-height: 160px;
+  padding: 0.7rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  font-family: var(--md-code-font-family);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  resize: vertical;
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+}
+
+.pyodide-output-label {
+  margin: 0.7rem 0 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.pyodide-output {
+  margin: 0;
+  min-height: 72px;
+  max-height: 280px;
+  overflow: auto;
+  padding: 0.7rem;
+  border-radius: 0.35rem;
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  font-family: var(--md-code-font-family);
+  font-size: 0.8rem;
+}
