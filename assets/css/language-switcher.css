@@ -1,0 +1,35 @@
+.lang-switcher {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+  box-shadow: var(--md-shadow-z2);
+}
+
+.lang-switcher__btn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--md-default-fg-color);
+  background: transparent;
+}
+
+.lang-switcher__btn + .lang-switcher__btn {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.lang-switcher__btn:hover {
+  background: var(--md-default-fg-color--lightest);
+}
+
+.lang-switcher__btn--active {
+  color: var(--md-primary-bg-color);
+  background: var(--md-primary-fg-color);
+}

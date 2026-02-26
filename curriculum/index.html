@@ -1,0 +1,2111 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A practical, chapter-based Python handbook.">
+      
+      
+      
+        <link rel="canonical" href="https://enaguero.github.io/python-book/curriculum/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../part-1-python-fundamentals/foundations-roadmap/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Curriculum Tracker - Python Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/css/pyodide-runner.css">
+    
+      <link rel="stylesheet" href="../assets/css/language-switcher.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#curriculum-tracker" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Python Book" class="md-header__button md-logo" aria-label="Python Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Curriculum Tracker
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../es/curriculum/" hreflang="es" class="md-select__link">
+              Espanol
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/enaguero/python-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    enaguero/python-book
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Python Book" class="md-nav__button md-logo" aria-label="Python Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Python Book
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/enaguero/python-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    enaguero/python-book
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Curriculum Tracker
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Curriculum Tracker
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-situation-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current situation (Baseline)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-learner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target learner
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gap-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gap analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modular-plan-draft-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular plan (Draft v2)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modular plan (Draft v2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#module-1-computer-fundamentals-and-execution-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 1: Computer fundamentals and execution model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-2-python-context-and-first-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 2: Python context and first programs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-3-variables-objects-memory-and-core-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 3: Variables, objects, memory, and core data types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-4-expressions-operators-and-control-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 4: Expressions, operators, and control flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-5-loops-functions-and-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 5: Loops, functions, and decomposition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-6-files-exceptions-and-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 6: Files, exceptions, and debugging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-7-modules-imports-environments-and-lightweight-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 7: Modules, imports, environments, and lightweight Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-8-oop-and-testing-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 8: OOP and testing basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-9-capstone-and-consolidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 9: Capstone and consolidation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pacing-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pacing policy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-syllabus-by-module-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed syllabus by module (v1)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed syllabus by module (v1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#module-1-computer-fundamentals-and-execution-model_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 1: Computer fundamentals and execution model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-2-python-context-and-first-programs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 2: Python context and first programs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-3-variables-objects-memory-and-core-data-types_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 3: Variables, objects, memory, and core data types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-4-expressions-operators-and-control-flow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 4: Expressions, operators, and control flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-5-loops-functions-and-decomposition_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 5: Loops, functions, and decomposition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-6-files-exceptions-and-debugging_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 6: Files, exceptions, and debugging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-7-modules-imports-environments-and-lightweight-git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 7: Modules, imports, environments, and lightweight Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-8-oop-and-testing-basics_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 8: OOP and testing basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-9-capstone-and-consolidation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 9: Capstone and consolidation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-progression-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise progression model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution tracker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approved-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approved decisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-update-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next update rule
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Part 1: Python Fundamentals
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Part 1: Python Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-1-python-fundamentals/foundations-roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Foundations Roadmap (3-4 Months)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-1-python-fundamentals/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-1-python-fundamentals/variables-and-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Variables and Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-1-python-fundamentals/control-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Control Flow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-1-python-fundamentals/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Part 2: Standard Library Essentials
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Part 2: Standard Library Essentials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-2-standard-library-essentials/collections-and-itertools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Collections and itertools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-2-standard-library-essentials/pathlib-and-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pathlib and Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-2-standard-library-essentials/datetime-and-json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    datetime and JSON
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Part 3: Real World Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Part 3: Real World Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-3-real-world-python/testing-with-pytest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing with pytest
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-3-real-world-python/packaging-and-virtualenvs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Packaging and Virtual Envs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-3-real-world-python/typing-and-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typing and Code Quality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-3-real-world-python/asyncio-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Asyncio Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Part 1 Exercises
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/part-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Part 2 Exercises
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/part-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Part 3 Exercises
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Authoring
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Authoring
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authoring/chapter-template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter Template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/interactivity-roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactivity Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-situation-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current situation (Baseline)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-learner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target learner
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gap-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gap analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modular-plan-draft-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular plan (Draft v2)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modular plan (Draft v2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#module-1-computer-fundamentals-and-execution-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 1: Computer fundamentals and execution model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-2-python-context-and-first-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 2: Python context and first programs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-3-variables-objects-memory-and-core-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 3: Variables, objects, memory, and core data types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-4-expressions-operators-and-control-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 4: Expressions, operators, and control flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-5-loops-functions-and-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 5: Loops, functions, and decomposition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-6-files-exceptions-and-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 6: Files, exceptions, and debugging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-7-modules-imports-environments-and-lightweight-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 7: Modules, imports, environments, and lightweight Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-8-oop-and-testing-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 8: OOP and testing basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-9-capstone-and-consolidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 9: Capstone and consolidation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pacing-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pacing policy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-syllabus-by-module-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed syllabus by module (v1)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed syllabus by module (v1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#module-1-computer-fundamentals-and-execution-model_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 1: Computer fundamentals and execution model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-2-python-context-and-first-programs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 2: Python context and first programs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-3-variables-objects-memory-and-core-data-types_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 3: Variables, objects, memory, and core data types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-4-expressions-operators-and-control-flow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 4: Expressions, operators, and control flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-5-loops-functions-and-decomposition_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 5: Loops, functions, and decomposition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-6-files-exceptions-and-debugging_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 6: Files, exceptions, and debugging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-7-modules-imports-environments-and-lightweight-git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 7: Modules, imports, environments, and lightweight Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-8-oop-and-testing-basics_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 8: OOP and testing basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-9-capstone-and-consolidation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 9: Capstone and consolidation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-progression-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise progression model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution tracker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approved-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approved decisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-update-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next update rule
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="curriculum-tracker">Curriculum Tracker<a class="headerlink" href="#curriculum-tracker" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
+<p>This file tracks the curriculum status and planning decisions for the Python Book.
+It is the single source of truth for what exists now, what is missing, and what to build next.</p>
+<h2 id="current-situation-baseline">Current situation (Baseline)<a class="headerlink" href="#current-situation-baseline" title="Permanent link">&para;</a></h2>
+<p>Status date: 2026-02-26</p>
+<ul>
+<li>Part 1 has core chapters:</li>
+<li>Getting Started</li>
+<li>Variables and Types</li>
+<li>Control Flow</li>
+<li>Functions</li>
+<li>A new beginner roadmap exists:</li>
+<li>Foundations Roadmap (3-4 Months)</li>
+<li>Parts 2 and 3 already contain intermediate/real-world chapters.</li>
+<li>Exercises are separated by part.</li>
+</ul>
+<h2 id="target-learner">Target learner<a class="headerlink" href="#target-learner" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Beginner with zero programming experience</li>
+<li>Self-paced learner (part-time, with flexible progression)</li>
+<li>Goal: solid Python foundations in an estimated 3-4 months, without fixed deadlines per topic</li>
+</ul>
+<h2 id="gap-analysis">Gap analysis<a class="headerlink" href="#gap-analysis" title="Permanent link">&para;</a></h2>
+<p>Covered now:</p>
+<ul>
+<li>Intro execution model (basic)</li>
+<li>Variables and types (basic)</li>
+<li>Control flow and functions (basic)</li>
+<li>High-level roadmap</li>
+</ul>
+<p>Needs stronger foundational coverage:</p>
+<ul>
+<li>Computer fundamentals (CPU, RAM, disk, process model)</li>
+<li>Python memory model behind variables and assignments</li>
+<li>Expressions and boolean logic depth</li>
+<li>File I/O from beginner perspective</li>
+<li>Errors, debugging, and tracebacks</li>
+<li>Modules/imports and multi-file structure</li>
+<li>OOP basics with practical criteria</li>
+<li>Testing mindset for beginners</li>
+</ul>
+<h2 id="modular-plan-draft-v2">Modular plan (Draft v2)<a class="headerlink" href="#modular-plan-draft-v2" title="Permanent link">&para;</a></h2>
+<p>This curriculum is incremental and mastery-based.
+Learners advance module by module when they can complete the exit criteria.</p>
+<h3 id="module-1-computer-fundamentals-and-execution-model">Module 1: Computer fundamentals and execution model<a class="headerlink" href="#module-1-computer-fundamentals-and-execution-model" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: CPU, RAM, disk, OS, scripts, interpreter, process lifecycle</li>
+<li>Exit criteria: explain how Python code moves from file to execution</li>
+</ul>
+<h3 id="module-2-python-context-and-first-programs">Module 2: Python context and first programs<a class="headerlink" href="#module-2-python-context-and-first-programs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: what Python is, where it is useful, REPL vs script, terminal basics</li>
+<li>Exit criteria: run and modify small scripts confidently</li>
+</ul>
+<h3 id="module-3-variables-objects-memory-and-core-data-types">Module 3: Variables, objects, memory, and core data types<a class="headerlink" href="#module-3-variables-objects-memory-and-core-data-types" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: name binding, assignment, <code>int</code>/<code>float</code>/<code>str</code>/<code>bool</code>/<code>None</code>, conversions</li>
+<li>Exit criteria: predict outputs and explain basic memory behavior</li>
+</ul>
+<h3 id="module-4-expressions-operators-and-control-flow">Module 4: Expressions, operators, and control flow<a class="headerlink" href="#module-4-expressions-operators-and-control-flow" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: arithmetic/logical expressions, comparisons, <code>if</code>/<code>elif</code>/<code>else</code></li>
+<li>Exit criteria: solve branching exercises with clean logic</li>
+</ul>
+<h3 id="module-5-loops-functions-and-decomposition">Module 5: Loops, functions, and decomposition<a class="headerlink" href="#module-5-loops-functions-and-decomposition" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: <code>for</code>/<code>while</code>, iteration patterns, function design, scope basics</li>
+<li>Exit criteria: refactor repetitive code into reusable functions</li>
+</ul>
+<h3 id="module-6-files-exceptions-and-debugging">Module 6: Files, exceptions, and debugging<a class="headerlink" href="#module-6-files-exceptions-and-debugging" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: file I/O, <code>pathlib</code>, <code>try</code>/<code>except</code>, tracebacks, debugging workflow</li>
+<li>Exit criteria: create scripts that read/write files and handle common failures</li>
+</ul>
+<h3 id="module-7-modules-imports-environments-and-lightweight-git">Module 7: Modules, imports, environments, and lightweight Git<a class="headerlink" href="#module-7-modules-imports-environments-and-lightweight-git" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: multi-file structure, imports, virtual environments, dependency basics, essential Git workflow</li>
+<li>Exit criteria: organize a small project across files with clean setup</li>
+</ul>
+<h3 id="module-8-oop-and-testing-basics">Module 8: OOP and testing basics<a class="headerlink" href="#module-8-oop-and-testing-basics" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: classes, objects, methods, encapsulation basics, intro <code>pytest</code></li>
+<li>Exit criteria: build and test a small class-based feature</li>
+</ul>
+<h3 id="module-9-capstone-and-consolidation">Module 9: Capstone and consolidation<a class="headerlink" href="#module-9-capstone-and-consolidation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Focus: end-to-end project, review weak areas, finalize foundational mastery</li>
+<li>Exit criteria: complete and present a small project with tests and README</li>
+</ul>
+<h2 id="pacing-policy">Pacing policy<a class="headerlink" href="#pacing-policy" title="Permanent link">&para;</a></h2>
+<ul>
+<li>No fixed timeline per module</li>
+<li>Progress depends on mastery, not calendar week</li>
+<li>Estimated total duration for most part-time learners: 3-4 months</li>
+</ul>
+<h2 id="detailed-syllabus-by-module-v1">Detailed syllabus by module (v1)<a class="headerlink" href="#detailed-syllabus-by-module-v1" title="Permanent link">&para;</a></h2>
+<h3 id="module-1-computer-fundamentals-and-execution-model_1">Module 1: Computer fundamentals and execution model<a class="headerlink" href="#module-1-computer-fundamentals-and-execution-model_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Explain CPU, RAM, disk, and operating system roles in plain language</li>
+<li>Describe what happens when running <code>python script.py</code></li>
+<li>Distinguish temporary memory from persistent storage</li>
+<li>Use terminal basics to move through folders and run scripts</li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Draw a simple runtime flow: file -&gt; interpreter -&gt; process -&gt; output</li>
+<li>Run and modify a first script from terminal</li>
+<li>Explain each line of a tiny script to another person</li>
+</ul>
+<p>Exercises:</p>
+<ol>
+<li>Label-and-explain activity: CPU vs RAM vs disk responsibilities</li>
+<li>Command-line lab: navigate folders and run 3 scripts from terminal</li>
+<li>Script trace: write what happens at each step of <code>python hello.py</code></li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner can clearly explain why closing a program clears RAM data</li>
+<li>Learner runs scripts without IDE-only dependency</li>
+<li>Learner can describe input -&gt; processing -&gt; output for a simple script</li>
+</ul>
+<h3 id="module-2-python-context-and-first-programs_1">Module 2: Python context and first programs<a class="headerlink" href="#module-2-python-context-and-first-programs_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Understand what Python is good for and common use cases</li>
+<li>Differentiate REPL and script usage</li>
+<li>Use <code>print()</code>, <code>input()</code>, comments, and basic script structure</li>
+<li>Read simple script output and modify behavior safely</li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Use REPL for quick experiments and then move code to a <code>.py</code> file</li>
+<li>Build tiny interactive scripts with user prompts</li>
+<li>Practice reading code before running it</li>
+</ul>
+<p>Exercises:</p>
+<ol>
+<li>Greeting assistant script with formatted output</li>
+<li>Unit conversion script (for example: Celsius/Fahrenheit)</li>
+<li>Input-and-summary script that collects and prints user profile data</li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner can choose REPL or script mode based on task</li>
+<li>Learner can write and run small interactive programs independently</li>
+<li>Learner can explain each line in their own script</li>
+</ul>
+<h3 id="module-3-variables-objects-memory-and-core-data-types_1">Module 3: Variables, objects, memory, and core data types<a class="headerlink" href="#module-3-variables-objects-memory-and-core-data-types_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Understand name binding and assignment in Python</li>
+<li>Use <code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code>, and <code>None</code> correctly</li>
+<li>Perform safe type conversions and avoid common conversion errors</li>
+<li>Inspect values with <code>type()</code> and basic identity checks with <code>id()</code></li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Predict output before executing code</li>
+<li>Debug type-related errors from <code>input()</code> usage</li>
+<li>Rewrite unclear variable names into readable ones</li>
+</ul>
+<p>Exercises:</p>
+<ol>
+<li>Bug fix lab: correct scripts with assignment/comparison mistakes</li>
+<li>Type conversion challenge: parse user input into useful numeric values</li>
+<li>Output prediction set: given code snippets, predict final values first</li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner explains why <code>input()</code> returns text and when conversion is needed</li>
+<li>Learner avoids confusing <code>=</code> and <code>==</code></li>
+<li>Learner can describe basic memory behavior for variable reassignment</li>
+</ul>
+<p>Checkpoint project A (after Module 3):</p>
+<ul>
+<li>Build a "personal profile calculator" CLI:
+  collect user data, convert numeric fields, and print computed summaries</li>
+</ul>
+<h3 id="module-4-expressions-operators-and-control-flow_1">Module 4: Expressions, operators, and control flow<a class="headerlink" href="#module-4-expressions-operators-and-control-flow_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Use arithmetic, comparison, and boolean operators with confidence</li>
+<li>Build clear <code>if</code>/<code>elif</code>/<code>else</code> decision trees</li>
+<li>Apply <code>and</code>/<code>or</code>/<code>not</code> correctly in combined conditions</li>
+<li>Avoid logic duplication through simpler branch design</li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Turn natural-language rules into explicit conditionals</li>
+<li>Refactor nested conditions into cleaner structures</li>
+<li>Test edge cases around boundaries and invalid inputs</li>
+</ul>
+<p>Exercises:</p>
+<ol>
+<li>Grade classifier with explicit boundary handling</li>
+<li>Eligibility checker (for example: discount, loan, or access rules)</li>
+<li>Decision table exercise: convert requirements into code branches</li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner can explain why each branch exists</li>
+<li>Learner handles at least 3 edge cases in branching tasks</li>
+<li>Learner writes readable conditions without unnecessary nesting</li>
+</ul>
+<h3 id="module-5-loops-functions-and-decomposition_1">Module 5: Loops, functions, and decomposition<a class="headerlink" href="#module-5-loops-functions-and-decomposition_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Use <code>for</code> and <code>while</code> loops for repeated tasks</li>
+<li>Apply loop control (<code>break</code>, <code>continue</code>) intentionally</li>
+<li>Design functions with clear parameters and return values</li>
+<li>Decompose larger scripts into smaller reusable functions</li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Implement accumulator patterns (count, sum, max/min)</li>
+<li>Build input-validation loops</li>
+<li>Refactor one long script into multiple focused functions</li>
+</ul>
+<p>Exercises:</p>
+<ol>
+<li>Number analyzer: count, sum, average, min, max from user inputs</li>
+<li>Retry loop: validate user input with limited attempts</li>
+<li>Refactor challenge: split one script into 4-6 functions</li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner can explain loop stop conditions clearly</li>
+<li>Learner writes functions that return values instead of only printing</li>
+<li>Learner can trace data flow across function calls</li>
+</ul>
+<h3 id="module-6-files-exceptions-and-debugging_1">Module 6: Files, exceptions, and debugging<a class="headerlink" href="#module-6-files-exceptions-and-debugging_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Read and write text files safely with <code>with open(...)</code></li>
+<li>Use <code>pathlib</code> for path operations</li>
+<li>Handle expected runtime errors with <code>try</code>/<code>except</code></li>
+<li>Read tracebacks and apply a basic debugging workflow</li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Parse line-based text files and generate summaries</li>
+<li>Handle missing file and invalid data scenarios gracefully</li>
+<li>Use <code>print</code> debugging and simple breakpoints to isolate issues</li>
+</ul>
+<p>Exercises:</p>
+<ol>
+<li>File summary tool: count lines, words, and unique entries</li>
+<li>Safe importer: read data file and skip/report invalid lines</li>
+<li>Debug clinic: repair intentionally broken file-processing scripts</li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner uses exceptions for expected failures, not blanket catches</li>
+<li>Learner can explain traceback location and error type</li>
+<li>Learner delivers one file-based script with robust error handling</li>
+</ul>
+<p>Checkpoint project B (after Module 6):</p>
+<ul>
+<li>Build a file-based tracker app (for example: expenses or habits)
+  with validation, persistence, and error handling</li>
+</ul>
+<h3 id="module-7-modules-imports-environments-and-lightweight-git_1">Module 7: Modules, imports, environments, and lightweight Git<a class="headerlink" href="#module-7-modules-imports-environments-and-lightweight-git_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Split code into multiple modules with clear responsibilities</li>
+<li>Use imports correctly and avoid circular dependency mistakes</li>
+<li>Create and use a virtual environment for project isolation</li>
+<li>Apply basic Git workflow for safe iteration</li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Organize one small app into 3-5 files</li>
+<li>Install and pin one dependency in a virtual environment</li>
+<li>Track iterative changes with small, meaningful commits</li>
+</ul>
+<p>Exercises:</p>
+<ol>
+<li>Restructure challenge: convert single-file script into package-like layout</li>
+<li>Environment lab: setup <code>.venv</code>, install dependency, and freeze requirements</li>
+<li>Git drill: commit a feature, compare with <code>git diff</code>, restore a file version</li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner can explain what each module is responsible for</li>
+<li>Learner can reproduce project setup on a clean environment</li>
+<li>Learner demonstrates a basic Git history with clear commit messages</li>
+</ul>
+<h3 id="module-8-oop-and-testing-basics_1">Module 8: OOP and testing basics<a class="headerlink" href="#module-8-oop-and-testing-basics_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Understand classes, objects, attributes, and methods</li>
+<li>Decide when OOP is useful vs plain functions</li>
+<li>Implement simple class behavior with <code>__init__</code></li>
+<li>Write basic tests with <code>pytest</code> for core behavior</li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Model a small domain as class instances</li>
+<li>Keep class methods focused and predictable</li>
+<li>Write tests for normal cases and one edge case per method</li>
+</ul>
+<p>Exercises:</p>
+<ol>
+<li><code>BankAccount</code> or <code>Wallet</code> class with deposit/withdraw rules</li>
+<li><code>Task</code>/<code>TodoList</code> classes with simple state transitions</li>
+<li><code>pytest</code> suite for class methods and validation errors</li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner can explain object state and method effects</li>
+<li>Learner writes and runs a passing <code>pytest</code> test suite</li>
+<li>Learner can refactor one function-only design into class-based design</li>
+</ul>
+<p>Checkpoint project C (after Module 8):</p>
+<ul>
+<li>Build a class-based mini application with tests
+  (for example: inventory manager, quiz system, or contact book)</li>
+</ul>
+<h3 id="module-9-capstone-and-consolidation_1">Module 9: Capstone and consolidation<a class="headerlink" href="#module-9-capstone-and-consolidation_1" title="Permanent link">&para;</a></h3>
+<p>Objectives:</p>
+<ul>
+<li>Integrate all foundational skills into one complete project</li>
+<li>Plan, implement, test, and document a small Python application</li>
+<li>Identify and fix personal weak areas from prior modules</li>
+<li>Demonstrate readiness for intermediate Python material</li>
+</ul>
+<p>Practice:</p>
+<ul>
+<li>Write a short implementation plan before coding</li>
+<li>Build in small increments with test/check cycles</li>
+<li>Perform final review for readability and error handling quality</li>
+</ul>
+<p>Exercises and deliverables:</p>
+<ol>
+<li>Capstone proposal (problem, scope, features, constraints)</li>
+<li>Project implementation with modular structure</li>
+<li>Test suite covering key logic paths</li>
+<li>README with setup, usage, and known limitations</li>
+<li>Reflection note: what was hard and what improved</li>
+</ol>
+<p>Completion checks:</p>
+<ul>
+<li>Learner can demo the project end-to-end</li>
+<li>Project includes file handling, functions/modules, and tests</li>
+<li>Learner can explain tradeoffs and next improvements</li>
+</ul>
+<h2 id="exercise-progression-model">Exercise progression model<a class="headerlink" href="#exercise-progression-model" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Level 1 (guided): starter templates and step-by-step prompts</li>
+<li>Level 2 (semi-guided): problem statement plus expected behavior</li>
+<li>Level 3 (independent): open-ended task with acceptance criteria only</li>
+</ul>
+<p>Progression rule:</p>
+<ul>
+<li>Complete at least one exercise at each level per module before moving on</li>
+<li>Repeat Level 2 or Level 3 tasks if completion checks are not met</li>
+</ul>
+<h2 id="execution-tracker">Execution tracker<a class="headerlink" href="#execution-tracker" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[x] Create beginner roadmap chapter</li>
+<li>[x] Define baseline and gaps in this tracker</li>
+<li>[x] Approve chapter-by-chapter scope and order</li>
+<li>[x] Write detailed syllabus per module (objectives + exercises)</li>
+<li>[ ] Create/expand beginner chapters</li>
+<li>[ ] Build incremental exercise progression and milestone checks</li>
+<li>[ ] Final consistency review (content, nav, exercises)</li>
+</ul>
+<h2 id="approved-decisions">Approved decisions<a class="headerlink" href="#approved-decisions" title="Permanent link">&para;</a></h2>
+<p>Approval date: 2026-02-26</p>
+<ol>
+<li>OOP timing:
+   Introduce OOP after procedural mastery (Modules 1-7), then continue with testing basics.</li>
+<li>Git scope:
+   Include lightweight Git fundamentals only (init, add, commit, status, log, diff, restore) as a support tool, not as a core programming block.</li>
+<li>Project cadence:
+   Use checkpoint mini-projects after major module blocks (after Modules 3, 6, and 8), plus one capstone in Module 9.</li>
+</ol>
+<h2 id="next-update-rule">Next update rule<a class="headerlink" href="#next-update-rule" title="Permanent link">&para;</a></h2>
+<p>When any curriculum decision changes:</p>
+<ol>
+<li>Update this file first.</li>
+<li>Then update related chapter pages.</li>
+<li>Keep this tracker aligned with <code>mkdocs.yml</code> navigation.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../part-1-python-fundamentals/foundations-roadmap/" class="md-footer__link md-footer__link--next" aria-label="Next: Foundations Roadmap (3-4 Months)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Foundations Roadmap (3-4 Months)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Python Book
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/enaguero/python-book" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.path", "navigation.footer", "content.code.copy", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+      
+        <script src="../assets/js/pyodide-runner.js"></script>
+      
+        <script src="../assets/js/language-switcher.js"></script>
+      
+    
+  </body>
+</html>

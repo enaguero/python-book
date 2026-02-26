@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://enaguero.github.io/python-book/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/curriculum/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/curriculum/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/curriculum/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/authoring/chapter-template/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/authoring/chapter-template/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/authoring/chapter-template/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/exercises/part-1/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/exercises/part-1/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/exercises/part-1/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/exercises/part-2/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/exercises/part-2/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/exercises/part-2/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/exercises/part-3/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/exercises/part-3/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/exercises/part-3/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-1-python-fundamentals/control-flow/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/control-flow/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/control-flow/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-1-python-fundamentals/foundations-roadmap/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/foundations-roadmap/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/foundations-roadmap/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-1-python-fundamentals/functions/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/functions/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/functions/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-1-python-fundamentals/getting-started/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/getting-started/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-1-python-fundamentals/variables-and-types/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/variables-and-types/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/variables-and-types/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-2-standard-library-essentials/collections-and-itertools/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-2-standard-library-essentials/collections-and-itertools/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/collections-and-itertools/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-2-standard-library-essentials/datetime-and-json/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-2-standard-library-essentials/datetime-and-json/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/datetime-and-json/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-2-standard-library-essentials/pathlib-and-files/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-2-standard-library-essentials/pathlib-and-files/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/pathlib-and-files/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-3-real-world-python/asyncio-basics/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-3-real-world-python/asyncio-basics/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-3-real-world-python/asyncio-basics/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-3-real-world-python/packaging-and-virtualenvs/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-3-real-world-python/packaging-and-virtualenvs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-3-real-world-python/packaging-and-virtualenvs/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-3-real-world-python/testing-with-pytest/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-3-real-world-python/testing-with-pytest/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-3-real-world-python/testing-with-pytest/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/part-3-real-world-python/typing-and-quality/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-3-real-world-python/typing-and-quality/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-3-real-world-python/typing-and-quality/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/roadmap/interactivity-roadmap/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/roadmap/interactivity-roadmap/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/roadmap/interactivity-roadmap/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/curriculum/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/curriculum/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/curriculum/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/authoring/chapter-template/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/authoring/chapter-template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/authoring/chapter-template/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/exercises/part-1/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/exercises/part-1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/exercises/part-1/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/exercises/part-2/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/exercises/part-2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/exercises/part-2/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/exercises/part-3/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/exercises/part-3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/exercises/part-3/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-1-python-fundamentals/control-flow/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/control-flow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/control-flow/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-1-python-fundamentals/foundations-roadmap/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/foundations-roadmap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/foundations-roadmap/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-1-python-fundamentals/functions/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/functions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/functions/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-1-python-fundamentals/getting-started/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/getting-started/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-1-python-fundamentals/variables-and-types/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-1-python-fundamentals/variables-and-types/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-1-python-fundamentals/variables-and-types/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/collections-and-itertools/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/collections-and-itertools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-2-standard-library-essentials/collections-and-itertools/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/datetime-and-json/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/datetime-and-json/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-2-standard-library-essentials/datetime-and-json/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/pathlib-and-files/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-2-standard-library-essentials/pathlib-and-files/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-2-standard-library-essentials/pathlib-and-files/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-3-real-world-python/asyncio-basics/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-3-real-world-python/asyncio-basics/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-3-real-world-python/asyncio-basics/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-3-real-world-python/packaging-and-virtualenvs/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-3-real-world-python/packaging-and-virtualenvs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-3-real-world-python/packaging-and-virtualenvs/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-3-real-world-python/testing-with-pytest/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-3-real-world-python/testing-with-pytest/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-3-real-world-python/testing-with-pytest/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/part-3-real-world-python/typing-and-quality/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/part-3-real-world-python/typing-and-quality/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/part-3-real-world-python/typing-and-quality/"/>
+    </url>
+    <url>
+        <loc>https://enaguero.github.io/python-book/es/roadmap/interactivity-roadmap/</loc>
+        <lastmod>2026-02-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://enaguero.github.io/python-book/es/roadmap/interactivity-roadmap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://enaguero.github.io/python-book/roadmap/interactivity-roadmap/"/>
+    </url>
+</urlset>
