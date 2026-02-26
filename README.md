@@ -2,6 +2,8 @@
 
 A practical, chapter-based Python handbook focused on helping beginners build solid foundations.
 
+Read this in Spanish: [README.es.md](README.es.md)
+
 ## Project purpose
 
 This project was created to make programming education more accessible for more people.
