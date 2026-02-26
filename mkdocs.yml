@@ -96,8 +96,10 @@ extra:
 extra_javascript:
   - https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js
   - assets/js/pyodide-runner.js
+  - assets/js/language-switcher.js
 
 extra_css:
   - assets/css/pyodide-runner.css
+  - assets/css/language-switcher.css
 
 copyright: Copyright &copy; 2026 Python Book
