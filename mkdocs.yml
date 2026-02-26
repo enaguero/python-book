@@ -81,6 +81,31 @@ plugins:
         - locale: es
           name: Espanol
           build: true
+          nav_translations:
+            Home: Inicio
+            Curriculum Tracker: Seguimiento del Curriculo
+            "Part 1: Python Fundamentals": "Parte 1: Fundamentos de Python"
+            "Part 2: Standard Library Essentials": "Parte 2: Esenciales de la Libreria Estandar"
+            "Part 3: Real World Python": "Parte 3: Python en el Mundo Real"
+            Exercises: Ejercicios
+            Authoring: Autoria
+            Foundations Roadmap (3-4 Months): Ruta de Fundamentos (3-4 Meses)
+            Getting Started: Primeros Pasos
+            Variables and Types: Variables y Tipos
+            Control Flow: Flujo de Control
+            Functions: Funciones
+            Collections and itertools: collections e itertools
+            Pathlib and Files: pathlib y Archivos
+            datetime and JSON: datetime y JSON
+            Testing with pytest: Pruebas con pytest
+            Packaging and Virtual Envs: Empaquetado y Entornos Virtuales
+            Typing and Code Quality: Tipado y Calidad de Codigo
+            Asyncio Basics: Fundamentos de asyncio
+            Part 1 Exercises: Ejercicios Parte 1
+            Part 2 Exercises: Ejercicios Parte 2
+            Part 3 Exercises: Ejercicios Parte 3
+            Chapter Template: Plantilla de Capitulo
+            Interactivity Roadmap: Hoja de Ruta de Interactividad
   - search
   - git-revision-date-localized:
       # Disabled by default to avoid noisy warnings in repos without git history.
